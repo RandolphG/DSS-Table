@@ -5,14 +5,25 @@
 ### Installation process :
 
 - clone repo
-- navigate to project folder
+
+
+- navigate to project backend folder
 - install all dependencies with yarn or npm
-- run with yarn or npm
+- run with yarn server or npm run server
+
+
+- navigate to project root folder
+- install all dependencies with yarn or npm i
+- run with yarn start or npm
 
 
 ```bash
-$ git clone https://github.com/RandolphG/Product.Page.git
-$ cd project
+$ git clone https://github.com/RandolphG/DSS-Table.git
+$ cd backend
 $ yarn or npm i
-$ yarn dev or npm run dev
+$ yarn server or npm run server
+
+$ cd ../
+$ yarn or npm i
+$ yarn start or npm start
 ```
