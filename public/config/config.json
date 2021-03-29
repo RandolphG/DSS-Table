@@ -1,0 +1,184 @@
+{
+  "devices": [
+    {
+      "key": "1",
+      "model": "HZ12",
+      "macAddress": "01:o7:t5:98:32",
+      "description": "mobile"
+    },
+    {
+      "key": "2",
+      "model": "LK87",
+      "macAddress": "01:s6:90:2s:s3",
+      "description": "desktop"
+    },
+    {
+      "key": "3",
+      "model": "GF57",
+      "macAddress": "02:f3:23:r3:l7",
+      "description": "tablet"
+    },
+    {
+      "key": "4",
+      "model": "AK54",
+      "macAddress": "01:2a:9t:w2:9d",
+      "description": "mobile"
+    },
+    {
+      "key": "5",
+      "model": "KG87",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "desktop"
+    },
+    {
+      "key": "6",
+      "model": "KU98",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "mobile"
+    },
+    {
+      "key": "7",
+      "model": "WI04",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "desktop"
+    },
+    {
+      "key": "8",
+      "model": "TN86",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "tablet"
+    },
+    {
+      "key": "9",
+      "model": "EP98",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "tablet"
+    },
+    {
+      "key": "10",
+      "model": "HX09",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "mobile"
+    },
+    {
+      "key": "11",
+      "model": "HZ12",
+      "macAddress": "01:o7:t5:98:32",
+      "description": "mobile"
+    },
+    {
+      "key": "12",
+      "model": "LK87",
+      "macAddress": "01:s6:90:2s:s3",
+      "description": "desktop"
+    },
+    {
+      "key": "13",
+      "model": "GF57",
+      "macAddress": "02:f3:23:r3:l7",
+      "description": "tablet"
+    },
+    {
+      "key": "14",
+      "model": "AO54",
+      "macAddress": "01:2a:9t:w2:9d",
+      "description": "mobile"
+    },
+    {
+      "key": "15",
+      "model": "HG87",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "desktop"
+    },
+    {
+      "key": "16",
+      "model": "KU98",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "mobile"
+    },
+    {
+      "key": "17",
+      "model": "WI04",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "desktop"
+    },
+    {
+      "key": "18",
+      "model": "TN86",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "tablet"
+    },
+    {
+      "key": "19",
+      "model": "EP98",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "tablet"
+    },
+    {
+      "key": "20",
+      "model": "HX09",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "mobile"
+    },
+    {
+      "key": "21",
+      "model": "HZ12",
+      "macAddress": "01:o7:t5:98:32",
+      "description": "mobile"
+    },
+    {
+      "key": "22",
+      "model": "LK87",
+      "macAddress": "01:s6:90:2s:s3",
+      "description": "desktop"
+    },
+    {
+      "key": "23",
+      "model": "GF57",
+      "macAddress": "02:f3:23:r3:l7",
+      "description": "tablet"
+    },
+    {
+      "key": "24",
+      "model": "AO54",
+      "macAddress": "01:2a:9t:w2:9d",
+      "description": "mobile"
+    },
+    {
+      "key": "25",
+      "model": "HG87",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "desktop"
+    },
+    {
+      "key": "26",
+      "model": "KU98",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "mobile"
+    },
+    {
+      "key": "27",
+      "model": "WI04",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "desktop"
+    },
+    {
+      "key": "28",
+      "model": "TN86",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "tablet"
+    },
+    {
+      "key": "29",
+      "model": "EP98",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "tablet"
+    },
+    {
+      "key": "30",
+      "model": "HX09",
+      "macAddress": "00:h4:34:0f:32",
+      "description": "mobile"
+    }
+  ]
+}

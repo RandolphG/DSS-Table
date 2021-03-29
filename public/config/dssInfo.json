@@ -1,0 +1,64 @@
+{
+  "dss_buttons": [
+    {
+      "key": "1",
+      "label": "HZ12",
+      "value": "01:o7:t5:98:32",
+      "dss_type": "mobile"
+    },
+    {
+      "key": "2",
+      "label": "LK87",
+      "value": "01:s6:90:2s:s3",
+      "dss_type": "desktop"
+    },
+    {
+      "key": "3",
+      "label": "GF57",
+      "value": "02:f3:23:r3:l7",
+      "dss_type": "tablet"
+    },
+    {
+      "key": "4",
+      "label": "AK54",
+      "value": "01:2a:9t:w2:9d",
+      "dss_type": "mobile"
+    },
+    {
+      "key": "5",
+      "label": "KG87",
+      "value": "00:h4:34:0f:32",
+      "dss_type": "desktop"
+    },
+    {
+      "key": "6",
+      "label": "KU98",
+      "value": "00:h4:34:0f:32",
+      "dss_type": "mobile"
+    },
+    {
+      "key": "7",
+      "label": "WI04",
+      "value": "00:h4:34:0f:32",
+      "dss_type": "desktop"
+    },
+    {
+      "key": "8",
+      "label": "TN86",
+      "value": "00:h4:34:0f:32",
+      "dss_type": "tablet"
+    },
+    {
+      "key": "9",
+      "label": "EP98",
+      "value": "00:h4:34:0f:32",
+      "dss_type": "tablet"
+    },
+    {
+      "key": "10",
+      "label": "HX09",
+      "value": "00:h4:34:0f:32",
+      "dss_type": "mobile"
+    }
+  ]
+}

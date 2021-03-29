@@ -1,0 +1,12 @@
+@import "app_style";
+@import "dss_page_style";
+@import "pagination_style";
+@import "modal_style";
+@import "page_style";
+@import "fonts";
+
+body{
+  margin: 0;
+  overflow: hidden;
+  font-family: $font-main;
+}

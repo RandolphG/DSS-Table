@@ -1,0 +1,132 @@
+@import "colors";
+@import "fonts";
+
+// Input
+$input-height: 30px;
+$small-wrapper: 330px;
+
+/*
+.portal-root {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}*/
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    background: #f9fbf7;
+    width: 300px;
+    height: 220px;
+    border-radius: 4px;
+    padding: 1rem;
+
+    &__header {
+      //background-color: deeppink;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      &__btn {
+        font-family: $font-main;
+        background-color: transparent;
+        border: 0;
+      }
+    }
+
+    &__input {
+      //background-color: lightpink;
+    }
+
+    &__select {
+      font-family: $font-main;
+      background-color: transparent;
+      appearance: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+
+      &__btn-save {
+        font-family: $font-main;
+        background-color: transparent;
+        border: 0;
+      }
+
+      &__btn-cancel {
+        font-family: $font-main;
+        background-color: transparent;
+        border: 0;
+      }
+    }
+  }
+}
+
+.input-group {
+  //background:blueviolet;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+
+  &__label {
+    //background:green;
+    display: block;
+    position: absolute;
+    top: 0;
+    // to keep the position center
+    line-height: $input-height;
+    color: #aaa;
+    left: 5px;
+    padding: 0 5px;
+    transition: line-height 200ms ease-in-out,
+    font-size 200ms ease-in-out,
+    top 200ms ease-in-out;
+    /* firefox fix */
+    pointer-events: none;
+  }
+
+  &__input {
+    background-color: #e8f0fe;
+    width: 100%;
+    height: $input-height;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    padding: 0 10px;
+    /* there must a required prop in input
+     &:valid,
+    need to add placeholder */
+    &:not(:placeholder-shown),
+    &:focus {
+      + label {
+        background-color: white;
+        line-height: 10px;
+        opacity: 1;
+        font-size: 10px;
+        top: -5px;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $primary-color;
+
+      + label {
+        color: $primary-color;
+      }
+    }
+  }
+}
