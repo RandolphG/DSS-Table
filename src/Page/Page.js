@@ -109,6 +109,19 @@ const Page = () => {
       item.key === tempInfo.key ? tempInfo : item
     );
 
+    axios
+      .put("http://localhost:4001/api/dss/(dssid)", {
+        headers: {
+          Authorization: "Token 123",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+      .then(() => console.log(`SUCCESS`))
+      .catch((error) => {
+        console.log(`Edit error...`, { error: error.message });
+      });
+
     setSortedList(data);
   }
 
@@ -119,7 +132,7 @@ const Page = () => {
     );
 
     axios
-      .delete("http://localhost:4001/api/devices/:id", {
+      .delete("http://localhost:4001/api/dss/(dssid)", {
         headers: {
           Authorization: "Token 123",
           "Content-Type": "application/json",
@@ -127,7 +140,7 @@ const Page = () => {
       })
       .then(() => console.log(`SUCCESS`))
       .catch((error) => {
-        console.log(`Delete error...`, { error: error.message });
+        console.log(`DSS Delete error...`, { error: error.message });
       });
 
     setSortedList(data);
