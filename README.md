@@ -1,6 +1,6 @@
 # Telsmart DSS Device Buttons
 
-![IMG_00](_telsmart.gif)
+![IMG_00](_telsmart_0.gif)
 
 ### Installation process :
 

@@ -3,6 +3,7 @@ import ErrorBoundary from "./ErrorBoundary";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import axios from "axios";
+import logo from "./_telsmart_logo.svg";
 import {
   devicePageAnimation,
   headerAnimation,
@@ -256,20 +257,6 @@ function App() {
     }
   });
 
-  const DevicePageSearchbar = () => (
-    <div className="_title__searchbar">
-      <input
-        className="device-page__content__searchbar__input"
-        key="random1"
-        value={searchInput}
-        placeholder={"search.."}
-        onChange={(e) => {
-          handleSearch(e);
-        }}
-      />
-    </div>
-  );
-
   const TableHeader = () => (
     <thead className="device-page__content__table__thead">
       <tr className="device-page__content__table__thead__tr">
@@ -303,10 +290,6 @@ function App() {
     </thead>
   );
 
-  const DevicePageHeader = () => {
-    return <motion.h1 {...devicePageHeaderAnimation}>Device Page</motion.h1>;
-  };
-
   const EditMode = (key) => inEditMode.status && inEditMode.rowKey === key;
 
   const DevicePageTableBody = (loading, filtered) => {
@@ -335,8 +318,11 @@ function App() {
                       onChange={(event) => handleChange(event)}
                     />
                   ) : (
-                    <Link style={{ textDecoration: "none" }} to="/page">
-                      <span>{model}</span>
+                    <Link
+                      style={{ textDecoration: "none", hover: "blue" }}
+                      to="/page"
+                    >
+                      <span className="link">{model}</span>
                     </Link>
                   )}
                 </td>
@@ -411,7 +397,7 @@ function App() {
           onClick={handlePreviousButton}
           disabled={currentPage === pages[0]}
         >
-          Prev
+          <span>Prev</span>
         </button>
       </li>
     );
@@ -506,14 +492,41 @@ function App() {
     </motion.div>
   );
 
+  const DevicePageSearchbar = () => (
+    <div className="searchbar">
+      <input
+        className="searchbar__input"
+        key="random1"
+        value={searchInput}
+        placeholder={"search.."}
+        onChange={(e) => {
+          handleSearch(e);
+        }}
+      />
+    </div>
+  );
+
+  const Logo = () => <img className="logo" src={logo} alt="logo" />;
+
+  const DevicePageHeader = () => {
+    return (
+      <motion.span
+        className="device-page__content_page_header__title"
+        {...devicePageHeaderAnimation}
+      >
+        <span className="device-page__content_page_header__title_devices">{`Devices: ${newData.length}`}</span>{" "}
+        {DevicePageSearchbar()}
+      </motion.span>
+    );
+  };
+
   return (
     <ErrorBoundary>
-      <motion.div {...devicePageAnimation} className="device-page">
+      <motion.div className="device-page" {...devicePageAnimation}>
         <div className="device-page__content">
-          <div className="_title">
+          <div className="device-page__content_page_header">
+            {Logo()}
             {DevicePageHeader()}
-            {DevicePageSearchbar()}
-            <span>Devices:{newData.length}</span>
           </div>
           {loading ? (
             <div>Loading...</div>

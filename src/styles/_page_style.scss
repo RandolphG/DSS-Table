@@ -1,41 +1,52 @@
 @import "fonts";
 
-._title {
-  //background-color: lawngreen;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .dss-device-page {
-  @extend .dss-page;
-  background: linear-gradient(to bottom, #f9fbf7, #C9D8FF);
+  @extend .background;
 
   &__content {
-    //background-color: lightseagreen;
-    box-sizing: border-box;
-    height: 400px;
-    width: 530px;
-    padding: 1rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 8px;
+    @extend .content;
+    overflow: hidden;
 
-    &_page-title {
-      //background-color: lawngreen;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    &_page_header {
+      @extend .pageHeader;
 
-      &__back-link   {
+      .logo {
+        @extend .logo;
+      }
+
+      &__title {
         //background-color: #0086e4;
-        text-decoration: none;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_text {
+          background: rgba(255, 255, 255, 0.6);
+          font-size: 2.5rem;
+          letter-spacing: -.1rem;
+          border-radius: 4px;
+          padding: 0 0.5rem;
+        }
+
+
+        .link {
+          //background-color: #282c34;
+          text-decoration: none;
+
+          &_back {
+            color: black;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 4px;
+            font-size: 1.5rem;
+          }
+        }
       }
     }
 
     &_page {
+      margin-top: 1rem;
       //background-color: deeppink;
       position: relative;
       box-sizing: border-box;
@@ -75,22 +86,7 @@
           //background: lightskyblue;
         }
 
-        &_th-action {
-          position: absolute;
-          right: 0;
-          //background: orange;
 
-          .btn-add {
-            background-color: transparent;
-            font-family: $font-main;
-            font-size: 1rem;
-            border: none;
-
-            &:hover {
-              color: green;
-            }
-          }
-        }
       }
     }
   }
@@ -115,6 +111,7 @@
   overflow: hidden;
   box-sizing: border-box;
   height: 10%;
+
   &__tr {
     //background-color: lightpink;
     display: flex;

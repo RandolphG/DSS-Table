@@ -2,13 +2,14 @@ import React, { useState, Fragment, useEffect } from "react";
 import ErrorBoundary from "../ErrorBoundary";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import axios from "axios";
 import {
   devicePageAnimation,
   devicePageHeaderAnimation,
   headerAnimation,
   tableRowAnimation,
 } from "../motionSettings";
-import axios from "axios";
+import logo from "../_telsmart_logo.svg";
 
 const Page = () => {
   const [inEditMode, setInEditMode] = useState({ status: false, rowKey: null });
@@ -398,14 +399,21 @@ const Page = () => {
     </div>
   );
 
-  const title = () => (
-    <div className="dss-device-page__content_page-title">
-      <motion.h1 {...devicePageHeaderAnimation}>DSS Page</motion.h1>
-      <Link className="dss-device-page__content_page-title__back-link" to="/">
-        <h4>Back</h4>
+  const PageHeader = () => (
+    <div className="dss-device-page__content_page_header__title">
+      <motion.span
+        className="dss-device-page__content_page_header__title_text"
+        {...devicePageHeaderAnimation}
+      >
+        DSS Page
+      </motion.span>
+      <Link className="link" to="/">
+        <h4 className="link_back">Back</h4>
       </Link>
     </div>
   );
+
+  const Logo = () => <img className="logo" src={logo} alt="logo" />;
 
   const addButton = () => (
     <button className="addButton" onClick={addNewEntry}>
@@ -419,7 +427,10 @@ const Page = () => {
         <div>Loading...</div>
       ) : (
         <div className="dss-device-page__content">
-          {title()}
+          <div className="dss-device-page__content_page_header">
+            {Logo()}
+            {PageHeader()}
+          </div>
           {tableheader()}
           {listItems()}
           {addButton()}

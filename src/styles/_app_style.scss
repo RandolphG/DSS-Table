@@ -1,40 +1,65 @@
 @import "fonts";
 
+$color1:#170C67;
+$color2:#F96711;
+$color3:#F5BA58;
+
 .device-page {
-  @extend .dss-page;
-  background: linear-gradient(to bottom, #f9fbf7, #C9D8FF);
+  @extend .background;
 
   &__content {
-    //background-color: lightseagreen;
-    box-sizing: border-box;
-    height: 400px;
-    width: 530px;
-    padding: 1rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 8px;
+    @extend .content;
+    overflow: hidden;
 
-    &__searchbar {
-      margin-bottom: 1rem;
-      background-color: lightpink;
+    &_page_header {
+      @extend .pageHeader;
 
-      &__input {
-        background: transparent;
-        font-family: $font-main;
-        font-size: 1.1rem;
-        border: none;
-        width: 90px;
-
-        &::placeholder {
-          color: black;
-        }
-        //border-bottom: grey solid 2px;
+      .logo {
+        @extend .logo;
       }
+
+      &__title {
+        //background-color: #0086e4;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        z-index: 10;
+
+        &_devices {
+          background: rgba(255, 255, 255, 0.6);
+          font-size: 2.5rem;
+          letter-spacing: -.1rem;
+          border-radius: 4px;
+          padding: 0 0.5rem;
+        }
+
+        .searchbar {
+          //background-color: lightpink;
+
+          &__input {
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.6);
+            font-family: $font-main;
+            font-size: 1.1rem;
+            border: none;
+            width: 90px;
+
+            &::placeholder {
+              color: black;
+            }
+
+            //border-bottom: grey solid 2px;
+          }
+        }
+      }
+
+
     }
 
+
     &__table {
+      margin-top: 1rem;
       //background-color: lawngreen;
       width: 500px;
 
@@ -90,6 +115,7 @@
               font-family: $font-main;
               font-size: 1rem;
               border: none;
+
               &:hover {
                 color: green;
               }
@@ -110,6 +136,7 @@
           height: 30px;
           padding: 4px;
           margin-bottom: .2rem;
+
           .input {
             color: #999999;
             font-family: $font-main;
@@ -159,6 +186,13 @@
             font-size: 1rem;
             position: absolute;
             left: 15px;
+            .link{
+              color: black;
+              //background-color: #0086e4;
+              &:hover{
+                color: $color3;
+              }
+            }
           }
 
           .actions {
@@ -191,6 +225,7 @@
             font-family: $font-main;
             font-size: 1rem;
             border: none;
+
             &:hover {
               color: lightseagreen;
             }
@@ -201,11 +236,13 @@
             font-family: $font-main;
             font-size: 1rem;
             border: none;
+
             &:hover {
               color: red;
             }
           }
         }
+
         &__edit {
           border: solid black 2px;
           border-radius: 4px;
